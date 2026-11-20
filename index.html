@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Конструктор Ревьюшной</title>
+<script>try{const u=new URL(location.href);if(u.searchParams.get("utm_source")==="chatgpt.com"){u.searchParams.delete("utm_source");history.replaceState(history.state,"",u.pathname+u.search+u.hash);}}catch(e){}</script>
 <style>
 *{box-sizing:border-box}
 html,body{margin:0;min-height:100%;font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;background:#f1f4f3;color:#232d30}
@@ -70,7 +71,7 @@ input[type=color]::-moz-color-swatch{border:1px solid rgba(0,0,0,.12);border-rad
 .topbar .meta{color:rgba(0,0,0,.55);font-size:13px}
 .cwrap{position:relative}
 canvas#cv{width:100%;aspect-ratio:1;display:block;border-radius:6px;touch-action:none;box-shadow:0 20px 60px rgba(53,68,75,.12);outline:none}
-textarea.inline{position:absolute;margin:0;padding:0;border:0;background:transparent;outline:2px dashed rgba(61,139,255,.8);outline-offset:6px;resize:none;overflow:hidden;white-space:pre-wrap;overflow-wrap:break-word;font-family:"Arial",sans-serif;z-index:3}
+textarea.inline{position:absolute;margin:0;padding:0;border:0;background:transparent;outline:2px dashed rgba(61,139,255,.8);outline-offset:6px;resize:none;overflow:hidden;white-space:pre-wrap;overflow-wrap:break-word;font-family:"SB Sans Display",Arial,sans-serif;z-index:3}
 .fbar{position:absolute;z-index:4;display:flex;align-items:center;gap:2px;padding:4px;border-radius:14px;background:#fff;box-shadow:0 10px 30px rgba(30,40,45,.22);white-space:nowrap}
 .fbar button{height:36px;min-width:36px;padding:0 8px;border-radius:10px;display:flex;align-items:center;gap:6px;font-size:13px;font-weight:700}
 .fbar button:hover{background:#f1f1f1}
@@ -232,7 +233,7 @@ const L={
   textLeading:1.15
 };
 L.titleLine=L.titleSize*L.titleLeading;
-const FONT='"Arial"', CAP=0.703, D=DEVICE;
+const FONT='"SB Sans Display",Arial,sans-serif', CAP=0.703, D=DEVICE;
 
 const $=s=>document.querySelector(s);
 const cv=$('#cv'), ctx=cv.getContext('2d');
